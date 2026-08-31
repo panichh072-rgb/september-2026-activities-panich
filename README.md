@@ -1,0 +1,1 @@
+# september-2026-activities-panich
