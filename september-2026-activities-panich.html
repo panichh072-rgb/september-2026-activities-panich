@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ปฏิทินกิจกรรมพณิช · กันยายน 2569</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@500;600;700&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#15242B; --ink-2:#51636B; --ink-3:#7C8B92;
+  --paper:#EAEFF0; --surface:#FFFFFF; --surface-2:#F5F8F8; --line:#D7DFE1;
+  --brand:#0C3D45; --brand-2:#12707F; --brand-ink:#EAF4F4;
+  --c-lecture:#2563EB; --c-conference:#7C3AED; --c-workshop:#B45309;
+  --c-therapy:#059669; --c-event:#C026D3; --c-duty:#DC2626;
+  --c-today:#0F766E; --c-weekend:#BE123C;
+  --shadow:0 1px 2px rgba(21,36,43,.07),0 4px 14px rgba(21,36,43,.06);
+  --radius:12px; --maxw:720px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ink:#E7EEEF; --ink-2:#A7B7BC; --ink-3:#82949A;
+    --paper:#0A1415; --surface:#101B1D; --surface-2:#152325; --line:#26393C;
+    --brand:#20B2A6; --brand-2:#3FD0C4; --brand-ink:#04211F;
+    --c-lecture:#7EA6FF; --c-conference:#BB9BFF; --c-workshop:#F2AD57;
+    --c-therapy:#3EE0A8; --c-event:#EE8CED; --c-duty:#FF8686;
+    --c-today:#2DD4BF; --c-weekend:#FF7A93;
+    --shadow:0 1px 2px rgba(0,0,0,.35),0 6px 20px rgba(0,0,0,.3);
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#E7EEEF; --ink-2:#A7B7BC; --ink-3:#82949A;
+  --paper:#0A1415; --surface:#101B1D; --surface-2:#152325; --line:#26393C;
+  --brand:#20B2A6; --brand-2:#3FD0C4; --brand-ink:#04211F;
+  --c-lecture:#7EA6FF; --c-conference:#BB9BFF; --c-workshop:#F2AD57;
+  --c-therapy:#3EE0A8; --c-event:#EE8CED; --c-duty:#FF8686;
+  --c-today:#2DD4BF; --c-weekend:#FF7A93;
+  --shadow:0 1px 2px rgba(0,0,0,.35),0 6px 20px rgba(0,0,0,.3);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"IBM Plex Sans Thai",system-ui,-apple-system,"Noto Sans Thai",sans-serif;
+  line-height:1.55; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:var(--maxw); margin:0 auto; padding:0 18px}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--brand-2); outline-offset:2px}
+
+.hero{
+  background:linear-gradient(135deg,var(--brand),var(--brand-2));
+  color:var(--brand-ink);
+  padding:calc(38px + env(safe-area-inset-top)) 18px 30px;
+}
+.hero .eyebrow{
+  margin:0 0 10px; font:600 .78rem/1.3 "Anuphan",sans-serif;
+  text-transform:uppercase; letter-spacing:.09em; opacity:.82;
+}
+.hero h1{
+  margin:0; font:700 clamp(1.6rem,4.6vw,2.3rem)/1.18 "Anuphan",sans-serif;
+  text-wrap:balance; letter-spacing:-.01em;
+}
+.hero p{margin:12px 0 0; max-width:52ch; font-size:.95rem; opacity:.92}
+
+.summary{
+  margin:-20px 0 0; position:relative; z-index:2;
+  background:var(--surface); border:1px solid var(--line); border-radius:16px;
+  box-shadow:var(--shadow); padding:18px 20px; display:flex; flex-direction:column; gap:14px;
+}
+.summary-top{display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap}
+.summary-name{font:600 1.15rem/1.3 "Anuphan",sans-serif}
+.summary-name small{display:block; margin-top:2px; font:500 .78rem/1.4 "IBM Plex Sans Thai",sans-serif; color:var(--ink-3)}
+.summary-count{text-align:right}
+.summary-count b{
+  display:block; font:600 1.6rem/1 "IBM Plex Mono",ui-monospace,monospace;
+  font-variant-numeric:tabular-nums;
+}
+.summary-count span{font-size:.76rem; color:var(--ink-3)}
+.chips{display:flex; flex-wrap:wrap; gap:8px}
+.chip{
+  display:inline-flex; align-items:center; gap:6px; padding:5px 11px;
+  background:var(--surface-2); border:1px solid var(--line); border-radius:999px;
+  font-size:.78rem; color:var(--ink-2); font-weight:500;
+}
+.chip b{color:var(--ink); font-family:"IBM Plex Mono",ui-monospace,monospace; font-weight:600}
+.dot{width:8px; height:8px; border-radius:50%; flex:none}
+
+.actions{margin:16px 0 0; display:flex; flex-wrap:wrap; align-items:center; gap:10px 14px}
+.export-btn{
+  display:inline-flex; align-items:center; gap:8px; padding:10px 18px;
+  background:var(--brand); color:var(--brand-ink); border-radius:999px;
+  text-decoration:none; font:600 .88rem/1 "IBM Plex Sans Thai",sans-serif;
+  box-shadow:var(--shadow); transition:filter .15s ease, transform .1s ease;
+}
+.export-btn:hover{filter:brightness(1.08)}
+.export-btn:active{transform:translateY(1px)}
+.export-hint{font-size:.78rem; color:var(--ink-3)}
+
+details.legend{margin:18px 0 0; border:1px solid var(--line); border-radius:12px; background:var(--surface); overflow:hidden}
+details.legend summary{
+  cursor:pointer; list-style:none; padding:12px 16px; display:flex; align-items:center;
+  justify-content:space-between; font:600 .85rem/1.3 "Anuphan",sans-serif; color:var(--ink);
+}
+details.legend summary::-webkit-details-marker{display:none}
+details.legend summary::after{content:"+"; font-size:1.1rem; color:var(--ink-3); font-family:"IBM Plex Mono",monospace}
+details.legend[open] summary::after{content:"–"}
+.legend-grid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(168px,1fr)); gap:9px 14px;
+  padding:2px 16px 16px; font-size:.83rem; color:var(--ink-2);
+}
+.legend-item{display:flex; align-items:center; gap:8px}
+.legend-item b{margin-left:auto; font-family:"IBM Plex Mono",monospace; color:var(--ink-3); font-weight:600; font-size:.78rem}
+
+main{padding:26px 0 8px}
+.timeline{margin-top:4px}
+.day{
+  display:grid; grid-template-columns:52px 1fr; gap:16px;
+  position:relative; padding-bottom:22px;
+}
+.day::before{
+  content:""; position:absolute; top:8px; bottom:0; left:60px;
+  border-left:2px solid var(--line);
+}
+.day:last-child::before{display:none}
+.day::after{
+  content:""; position:absolute; left:60px; top:8px; width:11px; height:11px;
+  transform:translate(-50%,0); border-radius:50%; background:var(--paper);
+  border:2.5px solid var(--ink-3); z-index:1;
+}
+.day.is-weekend::after{border-color:var(--c-weekend)}
+.day.is-today::after{border-color:var(--c-today); background:var(--c-today)}
+.stamp{position:relative; z-index:1; text-align:center; padding-top:2px}
+.stamp-wd{display:block; font:600 .68rem/1.3 "IBM Plex Sans Thai",sans-serif; color:var(--ink-3); letter-spacing:.02em}
+.stamp-num{display:block; font:600 1.4rem/1.15 "IBM Plex Mono",ui-monospace,monospace; color:var(--ink); font-variant-numeric:tabular-nums}
+.stamp-mo{display:block; font:500 .64rem/1.3 "IBM Plex Sans Thai",sans-serif; color:var(--ink-3)}
+
+.items{display:grid; gap:10px}
+.ev{
+  --c:var(--c-lecture);
+  background:var(--surface); border:1px solid var(--line); border-left:3px solid var(--c);
+  border-radius:var(--radius); padding:12px 14px; box-shadow:var(--shadow);
+  display:flex; flex-direction:column; gap:4px;
+}
+.ev--lecture{--c:var(--c-lecture)}
+.ev--conference{--c:var(--c-conference)}
+.ev--workshop{--c:var(--c-workshop)}
+.ev--therapy{--c:var(--c-therapy)}
+.ev--event{--c:var(--c-event)}
+.ev--duty{--c:var(--c-duty); background:color-mix(in srgb, var(--c) 6%, var(--surface))}
+.ev-time{font:600 .8rem/1.3 "IBM Plex Sans Thai",sans-serif; color:var(--brand-2); font-variant-numeric:tabular-nums}
+.ev-title{margin:0; font:600 .98rem/1.38 "IBM Plex Sans Thai",sans-serif; color:var(--ink)}
+.ev-meta{margin:0; font-size:.85rem; line-height:1.5; color:var(--ink-2)}
+.ev-tag{
+  align-self:flex-start; margin-top:2px; padding:2px 10px; border-radius:999px;
+  font-size:.72rem; font-weight:600; color:var(--c);
+  background:color-mix(in srgb, var(--c) 14%, transparent);
+}
+
+footer{padding:28px 18px 40px; text-align:center; color:var(--ink-3); font-size:.78rem; line-height:1.7}
+
+@media (max-width:540px){
+  .hero{padding-top:calc(30px + env(safe-area-inset-top))}
+  .day{grid-template-columns:40px 1fr; gap:11px}
+  .day::before{left:46px}
+  .day::after{left:46px}
+  .stamp-num{font-size:1.15rem}
+  .summary-top{flex-direction:column; align-items:flex-start; gap:6px}
+  .summary-count{text-align:left}
+}
+@media (prefers-reduced-motion: no-preference){
+  .day{animation:fade .5s ease both}
+  .day:nth-child(1){animation-delay:.02s} .day:nth-child(2){animation-delay:.05s}
+  .day:nth-child(3){animation-delay:.08s} .day:nth-child(4){animation-delay:.11s}
+  .day:nth-child(5){animation-delay:.14s} .day:nth-child(n+6){animation-delay:.16s}
+  @keyframes fade{from{opacity:0; transform:translateY(4px)} to{opacity:1; transform:translateY(0)}}
+}
+</style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">ศูนย์ฝึกอบรมแพทย์ประจำบ้าน โรงพยาบาลสวนปรุง · แพทย์ประจำบ้านปีที่ 1</p>
+      <h1>ปฏิทินกิจกรรม — พณิช</h1>
+      <p>กันยายน 2569 · รายการเรียน การฝึกอบรม และเวร 1st call ทั้งหมดของพณิชในเดือนนี้</p>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <section class="summary" aria-label="สรุปตารางของพณิช">
+      <div class="summary-top">
+        <div class="summary-name">พณิช<small>แพทย์ประจำบ้านปีที่ 1 · จิตเวชศาสตร์</small></div>
+        <div class="summary-count"><b>26</b><span>รายการทั้งหมด</span></div>
+      </div>
+      <div class="chips">
+        <span class="chip chip--stat"><i class="dot" style="background:var(--c-lecture)"></i>วิชาการ 5</span>
+          <span class="chip chip--stat"><i class="dot" style="background:var(--c-conference)"></i>ประชุม / นำเสนอ 7</span>
+          <span class="chip chip--stat"><i class="dot" style="background:var(--c-workshop)"></i>อบรม / ดูงาน 4</span>
+          <span class="chip chip--stat"><i class="dot" style="background:var(--c-therapy)"></i>กลุ่มบำบัด 2</span>
+          <span class="chip chip--stat"><i class="dot" style="background:var(--c-event)"></i>กิจกรรมพิเศษ 1</span>
+          <span class="chip chip--stat"><i class="dot" style="background:var(--c-duty)"></i>เวร 1st call พณิช 7</span>
+        <span class="chip">24 วันในเดือนมีกิจกรรม</span>
+      </div>
+      <div class="actions">
+        <a class="export-btn" href="#" download="september-2026-activities-panich.ics">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v13"/><path d="M6 11l6 6 6-6"/><path d="M5 21h14"/></svg>
+          ดาวน์โหลดปฏิทิน (.ics)
+        </a>
+        <span class="export-hint">นำเข้า Google Calendar / Outlook ได้ทันที</span>
+      </div>
+    </section>
+
+    <details class="legend">
+      <summary>ประเภทกิจกรรม</summary>
+      <div class="legend-grid">
+        <div class="legend-item"><i class="dot" style="background:var(--c-lecture)"></i><span>วิชาการ</span><b>5</b></div>
+        <div class="legend-item"><i class="dot" style="background:var(--c-conference)"></i><span>ประชุม / นำเสนอ</span><b>7</b></div>
+        <div class="legend-item"><i class="dot" style="background:var(--c-workshop)"></i><span>อบรม / ดูงาน</span><b>4</b></div>
+        <div class="legend-item"><i class="dot" style="background:var(--c-therapy)"></i><span>กลุ่มบำบัด</span><b>2</b></div>
+        <div class="legend-item"><i class="dot" style="background:var(--c-event)"></i><span>กิจกรรมพิเศษ</span><b>1</b></div>
+        <div class="legend-item"><i class="dot" style="background:var(--c-duty)"></i><span>เวร 1st call พณิช</span><b>7</b></div>
+      </div>
+    </details>
+
+    <main>
+      <div class="timeline">
+      <div class="day" data-start="2026-09-01" data-end="2026-09-01">
+      <div class="stamp"><span class="stamp-wd">อ.</span><b class="stamp-num">1</b><span class="stamp-mo">ก.ย.</span></div>
+      <div class="items">
+      <article class="ev ev--lecture"><div class="ev-time">13:00–16:00</div><h3 class="ev-title">Basic sci มช.: Clinical neuropsychology and intellectual assessment of adults</h3><p class="ev-meta">ผศ.พญ.ปุณย์จารี วิริยโกศล · ห้องประชุมจำลองฯ (315) ชั้น 3 ภาควิชาจิตเวชศาสตร์</p><span class="ev-tag ev-tag--lecture">วิชาการ</span></article>
+      </div></div>
+      <div class="day" data-start="2026-09-03" data-end="2026-09-03">
+      <div class="stamp"><span class="stamp-wd">พฤ.</span><b class="stamp-num">3</b><span class="stamp-mo">ก.ย.</span></div>
+      <div class="items">
+      <article class="ev ev--conference"><div class="ev-time">13:30–16:30</div><h3 class="ev-title">Case Conference R1 มช ภรัณยู</h3><p class="ev-meta">อ.การันตร์ · ห้องประชุม นพ.เกียรติภูมิ วงศ์รจิต ชั้น 2 อาคาร OPD</p><span class="ev-tag ev-tag--conference">ประชุม</span></article>
+      </div></div>
+      <div class="day" data-start="2026-09-04" data-end="2026-09-06">
+      <div class="stamp"><span class="stamp-wd">ศ.–อา.</span><b class="stamp-num">4–6</b><span class="stamp-mo">ก.ย.</span></div>
+      <div class="items">
+      <article class="ev ev--workshop"><div class="ev-time">ตลอดวัน · 3 วัน</div><h3 class="ev-title">DBT: Dialectical Behavior Therapy</h3><p class="ev-meta">โรงแรมอโมร่า ท่าแพ เชียงใหม่</p><span class="ev-tag ev-tag--workshop">อบรม</span></article>
+      <article class="ev ev--duty"><div class="ev-time">4 ก.ย. · 16:30–08:00 (+1)</div><h3 class="ev-title">เวร 1st call — พณิช</h3><p class="ev-meta">เวรหลักถึงเช้าวันรุ่งขึ้น</p><span class="ev-tag ev-tag--duty">เวร</span></article>
+      </div></div>
+      <div class="day" data-start="2026-09-07" data-end="2026-09-08">
+      <div class="stamp"><span class="stamp-wd">จ.–อ.</span><b class="stamp-num">7–8</b><span class="stamp-mo">ก.ย.</span></div>
+      <div class="items">
+      <article class="ev ev--workshop"><div class="ev-time">ตลอดวัน · 2 วัน</div><h3 class="ev-title">ศึกษาดูงาน MCATT</h3><p class="ev-meta">โรงพยาบาลศรีธัญญา นนทบุรี</p><span class="ev-tag ev-tag--workshop">อบรม</span></article>
+      <article class="ev ev--therapy"><div class="ev-time">7 ก.ย. · 13:30–14:30</div><h3 class="ev-title">Group therapy R2 ณปภัช + R1 วนพร</h3><p class="ev-meta">ตึกกรุณา ชั้น 3</p><span class="ev-tag ev-tag--therapy">กลุ่มบำบัด</span></article>
+      </div></div>
+      <div class="day" data-start="2026-09-09" data-end="2026-09-09">
+      <div class="stamp"><span class="stamp-wd">พ.</span><b class="stamp-num">9</b><span class="stamp-mo">ก.ย.</span></div>
+      <div class="items">
+      <article class="ev ev--duty"><div class="ev-time">16:30–08:00 (+1)</div><h3 class="ev-title">เวร 1st call — พณิช</h3><p class="ev-meta">เวรหลักถึงเช้าวันรุ่งขึ้น</p><span class="ev-tag ev-tag--duty">เวร</span></article>
+      </div></div>
+      <div class="day" data-start="2026-09-10" data-end="2026-09-10">
+      <div class="stamp"><span class="stamp-wd">พฤ.</span><b class="stamp-num">10</b><span class="stamp-mo">ก.ย.</span></div>
+      <div class="items">
+      <article class="ev ev--conference"><div class="ev-time">13:30–14:30</div><h3 class="ev-title">Noon report</h3><p class="ev-meta">อ.กิตติศักดิ์ · ห้องประชุม นพ.เกียรติภูมิ วงศ์รจิต ชั้น 2 อาคาร OPD</p><span class="ev-tag ev-tag--conference">ประชุม</span></article>
+      <article class="ev ev--conference"><div class="ev-time">14:30–16:30</div><h3 class="ev-title">Journal club R1 มช สิริลักษณ์</h3><p class="ev-meta">อ.กิตติศักดิ์ · ห้องประชุม นพ.เกียรติภูมิ วงศ์รจิต ชั้น 2 อาคาร OPD</p><span class="ev-tag ev-tag--conference">ประชุม</span></article>
+      </div></div>
+      <div class="day" data-start="2026-09-11" data-end="2026-09-11">
+      <div class="stamp"><span class="stamp-wd">ศ.</span><b class="stamp-num">11</b><span class="stamp-mo">ก.ย.</span></div>
+      <div class="items">
+      <article class="ev ev--lecture"><div class="ev-time">13:00–16:00</div><h3 class="ev-title">Basic sci มช.: Neural Sciences I — Functional neuroanatomy</h3><p class="ev-meta">ศ.พญ.ณหทัย วงศ์ปการันย์ · ห้องประชุมจำลองฯ (315) ชั้น 3 ภาควิชาจิตเวชศาสตร์</p><span class="ev-tag ev-tag--lecture">วิชาการ</span></article>
+      </div></div>
+      <div class="day" data-start="2026-09-13" data-end="2026-09-13">
+      <div class="stamp"><span class="stamp-wd">อา.</span><b class="stamp-num">13</b><span class="stamp-mo">ก.ย.</span></div>
+      <div class="items">
+      <article class="ev ev--duty"><div class="ev-time">16:30–08:00 (+1)</div><h3 class="ev-title">เวร 1st call — พณิช</h3><p class="ev-meta">เวรหลักถึงเช้าวันรุ่งขึ้น</p><span class="ev-tag ev-tag--duty">เวร</span></article>
+      </div></div>
+      <div class="day" data-start="2026-09-14" data-end="2026-09-14">
+      <div class="stamp"><span class="stamp-wd">จ.</span><b class="stamp-num">14</b><span class="stamp-mo">ก.ย.</span></div>
+      <div class="items">
+      <article class="ev ev--therapy"><div class="ev-time">13:30–14:30</div><h3 class="ev-title">Group therapy R2 ดวงกมล</h3><p class="ev-meta">ตึกกรุณา 3</p><span class="ev-tag ev-tag--therapy">กลุ่มบำบัด</span></article>
+      </div></div>
+      <div class="day" data-start="2026-09-15" data-end="2026-09-15">
+      <div class="stamp"><span class="stamp-wd">อ.</span><b class="stamp-num">15</b><span class="stamp-mo">ก.ย.</span></div>
+      <div class="items">
+      <article class="ev ev--lecture"><div class="ev-time">13:30–15:30</div><h3 class="ev-title">Topic: Substance related disorder</h3><p class="ev-meta">R3 ธีรพล · อ.อทิตยาพร · ห้องประชุม นพ.เกียรติภูมิ วงศ์รจิต ชั้น 2 อาคาร OPD</p><span class="ev-tag ev-tag--lecture">วิชาการ</span></article>
+      </div></div>
+      <div class="day" data-start="2026-09-16" data-end="2026-09-16">
+      <div class="stamp"><span class="stamp-wd">พ.</span><b class="stamp-num">16</b><span class="stamp-mo">ก.ย.</span></div>
+      <div class="items">
+      <article class="ev ev--conference"><div class="ev-time">12:00–13:30</div><h3 class="ev-title">CDA</h3><p class="ev-meta">ห้องประชุมคุณพุ่ม ชั้น 1 อาคารอุบลรัตนราชกัญญา</p><span class="ev-tag ev-tag--conference">ประชุม</span></article>
+      <article class="ev ev--duty"><div class="ev-time">16:30–08:00 (+1)</div><h3 class="ev-title">เวร 1st call — พณิช</h3><p class="ev-meta">เวรหลักถึงเช้าวันรุ่งขึ้น</p><span class="ev-tag ev-tag--duty">เวร</span></article>
+      </div></div>
+      <div class="day" data-start="2026-09-17" data-end="2026-09-19">
+      <div class="stamp"><span class="stamp-wd">พฤ.–ส.</span><b class="stamp-num">17–19</b><span class="stamp-mo">ก.ย.</span></div>
+      <div class="items">
+      <article class="ev ev--workshop"><div class="ev-time">ตลอดวัน · 3 วัน</div><h3 class="ev-title">อบรม Supportive</h3><p class="ev-meta">สถานที่ตามการนัดหมาย</p><span class="ev-tag ev-tag--workshop">อบรม</span></article>
+      </div></div>
+      <div class="day" data-start="2026-09-20" data-end="2026-09-20">
+      <div class="stamp"><span class="stamp-wd">อา.</span><b class="stamp-num">20</b><span class="stamp-mo">ก.ย.</span></div>
+      <div class="items">
+      <article class="ev ev--duty"><div class="ev-time">16:30–08:00 (+1)</div><h3 class="ev-title">เวร 1st call — พณิช</h3><p class="ev-meta">เวรหลักถึงเช้าวันรุ่งขึ้น</p><span class="ev-tag ev-tag--duty">เวร</span></article>
+      </div></div>
+      <div class="day" data-start="2026-09-21" data-end="2026-09-22">
+      <div class="stamp"><span class="stamp-wd">จ.–อ.</span><b class="stamp-num">21–22</b><span class="stamp-mo">ก.ย.</span></div>
+      <div class="items">
+      <article class="ev ev--workshop"><div class="ev-time">ตลอดวัน · 2 วัน</div><h3 class="ev-title">ศึกษาดูงาน MCATT</h3><p class="ev-meta">โรงพยาบาลศรีธัญญา นนทบุรี</p><span class="ev-tag ev-tag--workshop">อบรม</span></article>
+      <article class="ev ev--lecture"><div class="ev-time">22 ก.ย. · 13:00–16:00</div><h3 class="ev-title">Basic sci มช.: Neuroimaging, Applied electrophysiology</h3><p class="ev-meta">ผศ.พญ.ชวิศา สุระดม / พญ.สิริวิภา เจ็กภู่ · ห้องประชุมจำลองฯ (315)</p><span class="ev-tag ev-tag--lecture">วิชาการ</span></article>
+      <article class="ev ev--duty"><div class="ev-time">22 ก.ย. · 16:30–08:00 (+1)</div><h3 class="ev-title">เวร 1st call — พณิช</h3><p class="ev-meta">เวรหลักถึงเช้าวันรุ่งขึ้น</p><span class="ev-tag ev-tag--duty">เวร</span></article>
+      </div></div>
+      <div class="day" data-start="2026-09-23" data-end="2026-09-23">
+      <div class="stamp"><span class="stamp-wd">พ.</span><b class="stamp-num">23</b><span class="stamp-mo">ก.ย.</span></div>
+      <div class="items">
+      <article class="ev ev--conference"><div class="ev-time">13:30–14:30</div><h3 class="ev-title">Noon report</h3><p class="ev-meta">อ.ปริทรรศ · ห้องประชุม นพ.เกียรติภูมิ วงศ์รจิต ชั้น 2 อาคาร OPD</p><span class="ev-tag ev-tag--conference">ประชุม</span></article>
+      <article class="ev ev--conference"><div class="ev-time">14:30–16:30</div><h3 class="ev-title">Journal club R1 พณิช</h3><p class="ev-meta">อ.ปริทรรศ · ห้องประชุม นพ.เกียรติภูมิ วงศ์รจิต ชั้น 2 อาคาร OPD</p><span class="ev-tag ev-tag--conference">ประชุม</span></article>
+      </div></div>
+      <div class="day" data-start="2026-09-25" data-end="2026-09-25">
+      <div class="stamp"><span class="stamp-wd">ศ.</span><b class="stamp-num">25</b><span class="stamp-mo">ก.ย.</span></div>
+      <div class="items">
+      <article class="ev ev--event"><div class="ev-time">ตลอดวัน</div><h3 class="ev-title">Open House 2569</h3><span class="ev-tag ev-tag--event">กิจกรรมพิเศษ</span></article>
+      </div></div>
+      <div class="day" data-start="2026-09-29" data-end="2026-09-29">
+      <div class="stamp"><span class="stamp-wd">อ.</span><b class="stamp-num">29</b><span class="stamp-mo">ก.ย.</span></div>
+      <div class="items">
+      <article class="ev ev--lecture"><div class="ev-time">13:30–16:30</div><h3 class="ev-title">Lecture: Child Psychiatry</h3><p class="ev-meta">อ.วรรณิสา · ห้องประชุม นพ.เกียรติภูมิ วงศ์รจิต ชั้น 2 อาคาร OPD</p><span class="ev-tag ev-tag--lecture">วิชาการ</span></article>
+      <article class="ev ev--duty"><div class="ev-time">16:30–08:00 (+1)</div><h3 class="ev-title">เวร 1st call — พณิช</h3><p class="ev-meta">เวรหลักถึงเช้าวันรุ่งขึ้น</p><span class="ev-tag ev-tag--duty">เวร</span></article>
+      </div></div>
+      <div class="day" data-start="2026-09-30" data-end="2026-09-30">
+      <div class="stamp"><span class="stamp-wd">พ.</span><b class="stamp-num">30</b><span class="stamp-mo">ก.ย.</span></div>
+      <div class="items">
+      <article class="ev ev--conference"><div class="ev-time">13:30–16:30</div><h3 class="ev-title">Psychotherapy seminar R2 หทัยรัตน์</h3><p class="ev-meta">อ.กฤษณ์ติพงษ์ · ห้องประชุม นพ.เกียรติภูมิ วงศ์รจิต ชั้น 2 อาคาร OPD</p><span class="ev-tag ev-tag--conference">ประชุม</span></article>
+      </div></div>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    ปรับรูปแบบสำหรับพณิชโดยเฉพาะ จากปฏิทินกิจกรรมการศึกษาของศูนย์ฝึกอบรมแพทย์ประจำบ้าน รพ.สวนปรุง · เวลาอิง Asia/Bangkok (UTC+7)<br>
+    เวร 4, 9, 13, 16, 20, 22, 29 ก.ย. · อัปเดตล่าสุด 31 ส.ค. 2569
+  </footer>
+
+<script>
+(function(){
+  var today = new Date();
+  var y = today.getFullYear(), m = today.getMonth(), d = today.getDate();
+  var todayIso = y + "-" + String(m+1).padStart(2,"0") + "-" + String(d).padStart(2,"0");
+  document.querySelectorAll(".day").forEach(function(day){
+    var start = day.dataset.start, end = day.dataset.end;
+    if (todayIso >= start && todayIso <= end) day.classList.add("is-today");
+    if (start === end) {
+      var wd = new Date(start + "T00:00:00").getDay();
+      if (wd === 0 || wd === 6) day.classList.add("is-weekend");
+    }
+  });
+})();
+</script>
+<script>
+var ICS_TEXT = `BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Codex//September 2026 Activities//TH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:กิจกรรมการศึกษา กันยายน 2569
+X-WR-TIMEZONE:Asia/Bangkok
+BEGIN:VTIMEZONE
+TZID:Asia/Bangkok
+X-LIC-LOCATION:Asia/Bangkok
+BEGIN:STANDARD
+TZOFFSETFROM:+0700
+TZOFFSETTO:+0700
+TZNAME:+07
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:sep-01-basic-sci-2026@codex
+DTSTAMP:20260831T160000Z
+DTSTART;TZID=Asia/Bangkok:20260901T130000
+DTEND;TZID=Asia/Bangkok:20260901T160000
+SUMMARY:Basic sci มช.: Clinical neuropsychology
+LOCATION:ห้องประชุมจำลองฯ (315) ชั้น 3 ภาควิชาจิตเวชศาสตร์
+DESCRIPTION:Clinical neuropsychology and intellectual assessment of adults\\nผศ.พญ.ปุณย์จารี วิริยโกศล
+END:VEVENT
+BEGIN:VEVENT
+UID:sep-03-case-conference-2026@codex
+DTSTAMP:20260831T160000Z
+DTSTART;TZID=Asia/Bangkok:20260903T133000
+DTEND;TZID=Asia/Bangkok:20260903T163000
+SUMMARY:Case Conference R1 มช ภรัณยู
+LOCATION:ห้องประชุม นพ.เกียรติภูมิ วงศ์รจิต ชั้น 2 อาคาร OPD
+DESCRIPTION:อ.การันตร์
+END:VEVENT
+BEGIN:VEVENT
+UID:sep-04-dbt-2026@codex
+DTSTAMP:20260831T160000Z
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260907
+SUMMARY:DBT: Dialectical Behavior Therapy
+LOCATION:โรงแรมอโมร่า ท่าแพ เชียงใหม่
+END:VEVENT
+BEGIN:VEVENT
+UID:sep-04-duty-panit-2026@codex
+DTSTAMP:20260831T160000Z
+DTSTART;TZID=Asia/Bangkok:20260904T163000
+DTEND;TZID=Asia/Bangkok:20260905T080000
+SUMMARY:เวร 1st call — พณิช
+DESCRIPTION:เวรหลักถึงเช้าวันรุ่งขึ้น
+END:VEVENT
+BEGIN:VEVENT
+UID:sep-07-mcatt-2026@codex
+DTSTAMP:20260831T160000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260909
+SUMMARY:ศึกษาดูงาน MCATT
+LOCATION:โรงพยาบาลศรีธัญญา นนทบุรี
+END:VEVENT
+BEGIN:VEVENT
+UID:sep-07-group-therapy-2026@codex
+DTSTAMP:20260831T160000Z
+DTSTART;TZID=Asia/Bangkok:20260907T133000
+DTEND;TZID=Asia/Bangkok:20260907T143000
+SUMMARY:Group therapy R2 ณปภัช + R1 วนพร
+LOCATION:ตึกกรุณา ชั้น 3
+END:VEVENT
+BEGIN:VEVENT
+UID:sep-09-duty-panit-2026@codex
+DTSTAMP:20260831T160000Z
+DTSTART;TZID=Asia/Bangkok:20260909T163000
+DTEND;TZID=Asia/Bangkok:20260910T080000
+SUMMARY:เวร 1st call — พณิช
+DESCRIPTION:เวรหลักถึงเช้าวันรุ่งขึ้น
+END:VEVENT
+BEGIN:VEVENT
+UID:sep-10-noon-report-2026@codex
+DTSTAMP:20260831T160000Z
+DTSTART;TZID=Asia/Bangkok:20260910T133000
+DTEND;TZID=Asia/Bangkok:20260910T143000
+SUMMARY:Noon report
+LOCATION:ห้องประชุม นพ.เกียรติภูมิ วงศ์รจิต ชั้น 2 อาคาร OPD
+DESCRIPTION:อ.กิตติศักดิ์
+END:VEVENT
+BEGIN:VEVENT
+UID:sep-10-journal-club-2026@codex
+DTSTAMP:20260831T160000Z
+DTSTART;TZID=Asia/Bangkok:20260910T143000
+DTEND;TZID=Asia/Bangkok:20260910T163000
+SUMMARY:Journal club R1 มช สิริลักษณ์
+LOCATION:ห้องประชุม นพ.เกียรติภูมิ วงศ์รจิต ชั้น 2 อาคาร OPD
+DESCRIPTION:อ.กิตติศักดิ์
+END:VEVENT
+BEGIN:VEVENT
+UID:sep-11-neural-sciences-2026@codex
+DTSTAMP:20260831T160000Z
+DTSTART;TZID=Asia/Bangkok:20260911T130000
+DTEND;TZID=Asia/Bangkok:20260911T160000
+SUMMARY:Basic sci มช.: Neural Sciences I
+LOCATION:ห้องประชุมจำลองฯ (315) ชั้น 3 ภาควิชาจิตเวชศาสตร์
+DESCRIPTION:Functional neuroanatomy\\nศ.พญ.ณหทัย วงศ์ปการันย์
+END:VEVENT
+BEGIN:VEVENT
+UID:sep-13-duty-panit-2026@codex
+DTSTAMP:20260831T160000Z
+DTSTART;TZID=Asia/Bangkok:20260913T163000
+DTEND;TZID=Asia/Bangkok:20260914T080000
+SUMMARY:เวร 1st call — พณิช
+DESCRIPTION:เวรหลักถึงเช้าวันรุ่งขึ้น
+END:VEVENT
+BEGIN:VEVENT
+UID:sep-14-group-therapy-2026@codex
+DTSTAMP:20260831T160000Z
+DTSTART;TZID=Asia/Bangkok:20260914T133000
+DTEND;TZID=Asia/Bangkok:20260914T143000
+SUMMARY:Group therapy R2 ดวงกมล
+LOCATION:ตึกกรุณา 3
+END:VEVENT
+BEGIN:VEVENT
+UID:sep-15-substance-topic-2026@codex
+DTSTAMP:20260831T160000Z
+DTSTART;TZID=Asia/Bangkok:20260915T133000
+DTEND;TZID=Asia/Bangkok:20260915T153000
+SUMMARY:Topic: Substance related disorder
+LOCATION:ห้องประชุม นพ.เกียรติภูมิ วงศ์รจิต ชั้น 2 อาคาร OPD
+DESCRIPTION:R3 ธีรพล · อ.อทิตยาพร
+END:VEVENT
+BEGIN:VEVENT
+UID:sep-16-cda-2026@codex
+DTSTAMP:20260831T160000Z
+DTSTART;TZID=Asia/Bangkok:20260916T120000
+DTEND;TZID=Asia/Bangkok:20260916T133000
+SUMMARY:CDA
+LOCATION:ห้องประชุมคุณพุ่ม ชั้น 1 อาคารอุบลรัตนราชกัญญา
+END:VEVENT
+BEGIN:VEVENT
+UID:sep-16-duty-panit-2026@codex
+DTSTAMP:20260831T160000Z
+DTSTART;TZID=Asia/Bangkok:20260916T163000
+DTEND;TZID=Asia/Bangkok:20260917T080000
+SUMMARY:เวร 1st call — พณิช
+DESCRIPTION:เวรหลักถึงเช้าวันรุ่งขึ้น
+END:VEVENT
+BEGIN:VEVENT
+UID:sep-17-supportive-2026@codex
+DTSTAMP:20260831T160000Z
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260920
+SUMMARY:อบรม Supportive
+END:VEVENT
+BEGIN:VEVENT
+UID:sep-20-duty-panit-2026@codex
+DTSTAMP:20260831T160000Z
+DTSTART;TZID=Asia/Bangkok:20260920T163000
+DTEND;TZID=Asia/Bangkok:20260921T080000
+SUMMARY:เวร 1st call — พณิช
+DESCRIPTION:เวรหลักถึงเช้าวันรุ่งขึ้น
+END:VEVENT
+BEGIN:VEVENT
+UID:sep-21-mcatt-2026@codex
+DTSTAMP:20260831T160000Z
+DTSTART;VALUE=DATE:20260921
+DTEND;VALUE=DATE:20260923
+SUMMARY:ศึกษาดูงาน MCATT
+LOCATION:โรงพยาบาลศรีธัญญา นนทบุรี
+END:VEVENT
+BEGIN:VEVENT
+UID:sep-22-neuroimaging-2026@codex
+DTSTAMP:20260831T160000Z
+DTSTART;TZID=Asia/Bangkok:20260922T130000
+DTEND;TZID=Asia/Bangkok:20260922T160000
+SUMMARY:Basic sci มช.: Neuroimaging, Applied electrophysiology
+LOCATION:ห้องประชุมจำลองฯ (315) ชั้น 3 ภาควิชาจิตเวชศาสตร์
+DESCRIPTION:ผศ.พญ.ชวิศา สุระดม / พญ.สิริวิภา เจ็กภู่
+END:VEVENT
+BEGIN:VEVENT
+UID:sep-22-duty-panit-2026@codex
+DTSTAMP:20260831T160000Z
+DTSTART;TZID=Asia/Bangkok:20260922T163000
+DTEND;TZID=Asia/Bangkok:20260923T080000
+SUMMARY:เวร 1st call — พณิช
+DESCRIPTION:เวรหลักถึงเช้าวันรุ่งขึ้น
+END:VEVENT
+BEGIN:VEVENT
+UID:sep-23-noon-report-2026@codex
+DTSTAMP:20260831T160000Z
+DTSTART;TZID=Asia/Bangkok:20260923T133000
+DTEND;TZID=Asia/Bangkok:20260923T143000
+SUMMARY:Noon report
+LOCATION:ห้องประชุม นพ.เกียรติภูมิ วงศ์รจิต ชั้น 2 อาคาร OPD
+DESCRIPTION:อ.ปริทรรศ
+END:VEVENT
+BEGIN:VEVENT
+UID:sep-23-journal-club-2026@codex
+DTSTAMP:20260831T160000Z
+DTSTART;TZID=Asia/Bangkok:20260923T143000
+DTEND;TZID=Asia/Bangkok:20260923T163000
+SUMMARY:Journal club R1 พณิช
+LOCATION:ห้องประชุม นพ.เกียรติภูมิ วงศ์รจิต ชั้น 2 อาคาร OPD
+DESCRIPTION:อ.ปริทรรศ
+END:VEVENT
+BEGIN:VEVENT
+UID:sep-25-open-house-2026@codex
+DTSTAMP:20260831T160000Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:Open House 2569
+END:VEVENT
+BEGIN:VEVENT
+UID:sep-29-child-psychiatry-2026@codex
+DTSTAMP:20260831T160000Z
+DTSTART;TZID=Asia/Bangkok:20260929T133000
+DTEND;TZID=Asia/Bangkok:20260929T163000
+SUMMARY:Lecture: Child Psychiatry
+LOCATION:ห้องประชุม นพ.เกียรติภูมิ วงศ์รจิต ชั้น 2 อาคาร OPD
+DESCRIPTION:อ.วรรณิสา
+END:VEVENT
+BEGIN:VEVENT
+UID:sep-29-duty-panit-2026@codex
+DTSTAMP:20260831T160000Z
+DTSTART;TZID=Asia/Bangkok:20260929T163000
+DTEND;TZID=Asia/Bangkok:20260930T080000
+SUMMARY:เวร 1st call — พณิช
+DESCRIPTION:เวรหลักถึงเช้าวันรุ่งขึ้น
+END:VEVENT
+BEGIN:VEVENT
+UID:sep-30-psychotherapy-seminar-2026@codex
+DTSTAMP:20260831T160000Z
+DTSTART;TZID=Asia/Bangkok:20260930T133000
+DTEND;TZID=Asia/Bangkok:20260930T163000
+SUMMARY:Psychotherapy seminar R2 หทัยรัตน์
+LOCATION:ห้องประชุม นพ.เกียรติภูมิ วงศ์รจิต ชั้น 2 อาคาร OPD
+DESCRIPTION:อ.กฤษณ์ติพงษ์
+END:VEVENT
+END:VCALENDAR
+`;
+(function(){
+  var btn = document.querySelector(".export-btn");
+  if (!btn) return;
+  var ua = navigator.userAgent || "";
+  var isIOS = /iPad|iPhone|iPod/.test(ua) || (ua.indexOf("Macintosh") !== -1 && navigator.maxTouchPoints > 1);
+  if (isIOS) {
+    btn.removeAttribute("download");
+    btn.setAttribute("href", "data:text/calendar;charset=utf-8," + encodeURIComponent(ICS_TEXT));
+  } else {
+    btn.setAttribute("href", "data:text/calendar;charset=utf-8;base64," + btoa(unescape(encodeURIComponent(ICS_TEXT))));
+  }
+})();
+</script>
+</body>
+</html>
