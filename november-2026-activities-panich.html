@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ปฏิทินกิจกรรมพณิช · พฤศจิกายน 2569</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@500;600;700&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#15242B; --ink-2:#51636B; --ink-3:#7C8B92;
+  --paper:#EAEFF0; --surface:#FFFFFF; --surface-2:#F5F8F8; --line:#D7DFE1;
+  --brand:#0C3D45; --brand-2:#12707F; --brand-ink:#EAF4F4;
+  --c-lecture:#2563EB; --c-conference:#7C3AED; --c-workshop:#B45309;
+  --c-therapy:#059669; --c-event:#C026D3; --c-duty:#DC2626; --c-procedure:#0891B2;
+  --c-today:#0F766E; --c-weekend:#BE123C;
+  --shadow:0 1px 2px rgba(21,36,43,.07),0 4px 14px rgba(21,36,43,.06);
+  --radius:12px; --maxw:720px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ink:#E7EEEF; --ink-2:#A7B7BC; --ink-3:#82949A;
+    --paper:#0A1415; --surface:#101B1D; --surface-2:#152325; --line:#26393C;
+    --brand:#20B2A6; --brand-2:#3FD0C4; --brand-ink:#04211F;
+    --c-lecture:#7EA6FF; --c-conference:#BB9BFF; --c-workshop:#F2AD57;
+    --c-therapy:#3EE0A8; --c-event:#EE8CED; --c-duty:#FF8686; --c-procedure:#22D3EE;
+    --c-today:#2DD4BF; --c-weekend:#FF7A93;
+    --shadow:0 1px 2px rgba(0,0,0,.35),0 6px 20px rgba(0,0,0,.3);
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#E7EEEF; --ink-2:#A7B7BC; --ink-3:#82949A;
+  --paper:#0A1415; --surface:#101B1D; --surface-2:#152325; --line:#26393C;
+  --brand:#20B2A6; --brand-2:#3FD0C4; --brand-ink:#04211F;
+  --c-lecture:#7EA6FF; --c-conference:#BB9BFF; --c-workshop:#F2AD57;
+  --c-therapy:#3EE0A8; --c-event:#EE8CED; --c-duty:#FF8686; --c-procedure:#22D3EE;
+  --c-today:#2DD4BF; --c-weekend:#FF7A93;
+  --shadow:0 1px 2px rgba(0,0,0,.35),0 6px 20px rgba(0,0,0,.3);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"IBM Plex Sans Thai",system-ui,-apple-system,"Noto Sans Thai",sans-serif;
+  line-height:1.55; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:var(--maxw); margin:0 auto; padding:0 18px}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--brand-2); outline-offset:2px}
+
+.hero{
+  background:linear-gradient(135deg,var(--brand),var(--brand-2));
+  color:var(--brand-ink);
+  padding:calc(38px + env(safe-area-inset-top)) 18px 30px;
+}
+.hero .eyebrow{
+  margin:0 0 10px; font:600 .78rem/1.3 "Anuphan",sans-serif;
+  text-transform:uppercase; letter-spacing:.09em; opacity:.82;
+}
+.hero h1{
+  margin:0; font:700 clamp(1.6rem,4.6vw,2.3rem)/1.18 "Anuphan",sans-serif;
+  text-wrap:balance; letter-spacing:-.01em;
+}
+.hero p{margin:12px 0 0; max-width:52ch; font-size:.95rem; opacity:.92}
+
+.summary{
+  margin:-20px 0 0; position:relative; z-index:2;
+  background:var(--surface); border:1px solid var(--line); border-radius:16px;
+  box-shadow:var(--shadow); padding:18px 20px; display:flex; flex-direction:column; gap:14px;
+}
+.summary-top{display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap}
+.summary-name{font:600 1.15rem/1.3 "Anuphan",sans-serif}
+.summary-name small{display:block; margin-top:2px; font:500 .78rem/1.4 "IBM Plex Sans Thai",sans-serif; color:var(--ink-3)}
+.summary-count{text-align:right}
+.summary-count b{
+  display:block; font:600 1.6rem/1 "IBM Plex Mono",ui-monospace,monospace;
+  font-variant-numeric:tabular-nums;
+}
+.summary-count span{font-size:.76rem; color:var(--ink-3)}
+.chips{display:flex; flex-wrap:wrap; gap:8px}
+.chip{
+  display:inline-flex; align-items:center; gap:6px; padding:5px 11px;
+  background:var(--surface-2); border:1px solid var(--line); border-radius:999px;
+  font-size:.78rem; color:var(--ink-2); font-weight:500;
+}
+.chip b{color:var(--ink); font-family:"IBM Plex Mono",ui-monospace,monospace; font-weight:600}
+.dot{width:8px; height:8px; border-radius:50%; flex:none}
+
+.actions{margin:16px 0 0; display:flex; flex-wrap:wrap; align-items:center; gap:10px 14px}
+.export-btn{
+  display:inline-flex; align-items:center; gap:8px; padding:10px 18px;
+  background:var(--brand); color:var(--brand-ink); border-radius:999px;
+  text-decoration:none; font:600 .88rem/1 "IBM Plex Sans Thai",sans-serif;
+  box-shadow:var(--shadow); transition:filter .15s ease, transform .1s ease;
+}
+.export-btn:hover{filter:brightness(1.08)}
+.export-btn:active{transform:translateY(1px)}
+.export-hint{font-size:.78rem; color:var(--ink-3)}
+.export-sub{margin:12px 0 0; padding-top:12px; border-top:1px dashed var(--line)}
+.export-sub p{margin:0 0 8px; font-size:.76rem; color:var(--ink-3); line-height:1.5}
+.export-sub-links{display:flex; flex-wrap:wrap; gap:8px}
+.export-sub-links a{
+  display:inline-flex; align-items:center; gap:6px; padding:5px 11px;
+  border-radius:999px; text-decoration:none; font:600 .76rem/1 "IBM Plex Sans Thai",sans-serif;
+  border:1px solid var(--line); background:var(--surface-2);
+}
+.export-sub-links a .dot{width:7px; height:7px}
+
+details.legend{margin:18px 0 0; border:1px solid var(--line); border-radius:12px; background:var(--surface); overflow:hidden}
+details.legend summary{
+  cursor:pointer; list-style:none; padding:12px 16px; display:flex; align-items:center;
+  justify-content:space-between; font:600 .85rem/1.3 "Anuphan",sans-serif; color:var(--ink);
+}
+details.legend summary::-webkit-details-marker{display:none}
+details.legend summary::after{content:"+"; font-size:1.1rem; color:var(--ink-3); font-family:"IBM Plex Mono",monospace}
+details.legend[open] summary::after{content:"–"}
+.legend-grid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(168px,1fr)); gap:9px 14px;
+  padding:2px 16px 16px; font-size:.83rem; color:var(--ink-2);
+}
+.legend-item{display:flex; align-items:center; gap:8px}
+.legend-item b{margin-left:auto; font-family:"IBM Plex Mono",monospace; color:var(--ink-3); font-weight:600; font-size:.78rem}
+
+main{padding:26px 0 8px}
+.timeline{margin-top:4px}
+.day{
+  display:grid; grid-template-columns:52px 1fr; gap:16px;
+  position:relative; padding-bottom:22px;
+}
+.day::before{
+  content:""; position:absolute; top:8px; bottom:0; left:60px;
+  border-left:2px solid var(--line);
+}
+.day:last-child::before{display:none}
+.day::after{
+  content:""; position:absolute; left:60px; top:8px; width:11px; height:11px;
+  transform:translate(-50%,0); border-radius:50%; background:var(--paper);
+  border:2.5px solid var(--ink-3); z-index:1;
+}
+.day.is-weekend::after{border-color:var(--c-weekend)}
+.day.is-today::after{border-color:var(--c-today); background:var(--c-today)}
+.stamp{position:relative; z-index:1; text-align:center; padding-top:2px}
+.stamp-wd{display:block; font:600 .68rem/1.3 "IBM Plex Sans Thai",sans-serif; color:var(--ink-3); letter-spacing:.02em}
+.stamp-num{display:block; font:600 1.4rem/1.15 "IBM Plex Mono",ui-monospace,monospace; color:var(--ink); font-variant-numeric:tabular-nums}
+.stamp-mo{display:block; font:500 .64rem/1.3 "IBM Plex Sans Thai",sans-serif; color:var(--ink-3)}
+
+.items{display:grid; gap:10px}
+.ev{
+  --c:var(--c-lecture);
+  background:var(--surface); border:1px solid var(--line); border-left:3px solid var(--c);
+  border-radius:var(--radius); padding:12px 14px; box-shadow:var(--shadow);
+  display:flex; flex-direction:column; gap:4px;
+}
+.ev--lecture{--c:var(--c-lecture)}
+.ev--conference{--c:var(--c-conference)}
+.ev--workshop{--c:var(--c-workshop)}
+.ev--therapy{--c:var(--c-therapy)}
+.ev--event{--c:var(--c-event)}
+.ev--procedure{--c:var(--c-procedure)}
+.ev--duty{--c:var(--c-duty); background:color-mix(in srgb, var(--c) 6%, var(--surface))}
+.ev--duty2{--c:var(--c-duty); background:color-mix(in srgb, var(--c) 12%, var(--surface))}
+.ev-time{font:600 .8rem/1.3 "IBM Plex Sans Thai",sans-serif; color:var(--brand-2); font-variant-numeric:tabular-nums}
+.ev-title{margin:0; font:600 .98rem/1.38 "IBM Plex Sans Thai",sans-serif; color:var(--ink)}
+.ev-meta{margin:0; font-size:.85rem; line-height:1.5; color:var(--ink-2)}
+.ev-tag{
+  align-self:flex-start; margin-top:2px; padding:2px 10px; border-radius:999px;
+  font-size:.72rem; font-weight:600; color:var(--c);
+  background:color-mix(in srgb, var(--c) 14%, transparent);
+}
+
+footer{padding:28px 18px 40px; text-align:center; color:var(--ink-3); font-size:.78rem; line-height:1.7}
+
+@media (max-width:540px){
+  .hero{padding-top:calc(30px + env(safe-area-inset-top))}
+  .day{grid-template-columns:40px 1fr; gap:11px}
+  .day::before{left:46px}
+  .day::after{left:46px}
+  .stamp-num{font-size:1.15rem}
+  .summary-top{flex-direction:column; align-items:flex-start; gap:6px}
+  .summary-count{text-align:left}
+}
+@media (prefers-reduced-motion: no-preference){
+  .day{animation:fade .5s ease both}
+  .day:nth-child(1){animation-delay:.02s} .day:nth-child(2){animation-delay:.05s}
+  .day:nth-child(3){animation-delay:.08s} .day:nth-child(4){animation-delay:.11s}
+  .day:nth-child(5){animation-delay:.14s} .day:nth-child(n+6){animation-delay:.16s}
+  @keyframes fade{from{opacity:0; transform:translateY(4px)} to{opacity:1; transform:translateY(0)}}
+}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="wrap">
+    <p class="eyebrow">ปฏิทินกิจกรรมการฝึกอบรม · จิตเวชศาสตร์</p>
+    <h1>พฤศจิกายน 2569</h1>
+    <p>ตารางกิจกรรมวิชาการและเวรของแพทย์ประจำบ้าน พณิช สาขาจิตเวชศาสตร์ โรงพยาบาลสวนปรุง</p>
+  </div>
+</div>
+<div class="wrap">
+  <div class="summary">
+    <div class="summary-top">
+      <div class="summary-name">พณิช<small>แพทย์ประจำบ้านปีที่ 1 · จิตเวชศาสตร์ · รพ.สวนปรุง</small></div>
+      <div class="summary-count"><b>28</b><span>กิจกรรมทั้งหมด</span></div>
+    </div>
+    <div class="chips">
+      <span class="chip"><span class="dot" style="background:var(--c-lecture)"></span>บรรยาย / Basic sci <b>5</b></span>
+      <span class="chip"><span class="dot" style="background:var(--c-conference)"></span>วิชาการ/Conference <b>10</b></span>
+      <span class="chip"><span class="dot" style="background:var(--c-workshop)"></span>สัมมนา <b>1</b></span>
+      <span class="chip"><span class="dot" style="background:var(--c-therapy)"></span>บำบัด <b>1</b></span>
+      <span class="chip"><span class="dot" style="background:var(--c-event)"></span>กิจกรรม <b>1</b></span>
+      <span class="chip"><span class="dot" style="background:var(--c-procedure)"></span>หัตถการ (ECT) <b>1</b></span>
+      <span class="chip"><span class="dot" style="background:var(--c-duty)"></span>เวร 1st call <b>7</b></span>
+      <span class="chip"><span class="dot" style="background:var(--c-duty)"></span>เวร รพ.ลานนา <b>2</b></span>
+    </div>
+    <div class="actions">
+      <a class="export-btn" href="november-2026-activities-panich.ics" download="november-2026-activities-panich.ics">⬇ เพิ่มลงปฏิทิน (.ics)</a>
+      <span class="export-hint">ใช้ได้กับ Google Calendar / Apple Calendar / Outlook</span>
+    </div>
+    <div class="export-sub">
+      <p>ต้องการให้แต่ละประเภทขึ้นคนละสีในมือถือ? ดาวน์โหลดแยกไฟล์แล้วนำเข้าเป็นปฏิทินคนละอันต่อไปนี้ แล้วตั้งสีของแต่ละปฏิทินเอง:</p>
+      <div class="export-sub-links">
+        <a href="november-2026-basic-sci.ics" download style="color:#1E90FF; border-color:#1E90FF55"><span class="dot" style="background:#1E90FF; border-radius:50%; display:inline-block"></span>Basic sci</a>
+        <a href="november-2026-duty-suanprung.ics" download style="color:#DC143C; border-color:#DC143C55"><span class="dot" style="background:#DC143C; border-radius:50%; display:inline-block"></span>เวรสวนปรุง</a>
+        <a href="november-2026-duty-lanna.ics" download style="color:#FF8C00; border-color:#FF8C0055"><span class="dot" style="background:#FF8C00; border-radius:50%; display:inline-block"></span>เวร รพ.ลานนา</a>
+        <a href="november-2026-ect.ics" download style="color:#008B8B; border-color:#008B8B55"><span class="dot" style="background:#008B8B; border-radius:50%; display:inline-block"></span>ECT</a>
+        <a href="november-2026-other-classes.ics" download style="color:#9400D3; border-color:#9400D355"><span class="dot" style="background:#9400D3; border-radius:50%; display:inline-block"></span>ตารางเรียนอื่นๆ</a>
+      </div>
+    </div>
+  </div>
+
+  <details class="legend">
+    <summary>คำอธิบายสัญลักษณ์</summary>
+    <div class="legend-grid">
+      <div class="legend-item"><span class="dot" style="background:var(--c-lecture)"></span>บรรยาย / Basic sci<b>5</b></div>
+      <div class="legend-item"><span class="dot" style="background:var(--c-conference)"></span>วิชาการ/Conference<b>10</b></div>
+      <div class="legend-item"><span class="dot" style="background:var(--c-workshop)"></span>สัมมนา<b>1</b></div>
+      <div class="legend-item"><span class="dot" style="background:var(--c-therapy)"></span>บำบัด<b>1</b></div>
+      <div class="legend-item"><span class="dot" style="background:var(--c-event)"></span>กิจกรรม<b>1</b></div>
+      <div class="legend-item"><span class="dot" style="background:var(--c-procedure)"></span>หัตถการ (ECT)<b>1</b></div>
+      <div class="legend-item"><span class="dot" style="background:var(--c-duty)"></span>เวร 1st call<b>7</b></div>
+      <div class="legend-item"><span class="dot" style="background:var(--c-duty)"></span>เวร รพ.ลานนา<b>2</b></div>
+    </div>
+  </details>
+
+  <main>
+    <div class="timeline">
+      <div class="day is-weekend">
+        <div class="stamp">
+          <span class="stamp-wd">อาทิตย์</span>
+          <span class="stamp-num">1</span>
+          <span class="stamp-mo">พ.ย.</span>
+        </div>
+        <div class="items">
+        <div class="ev ev--duty">
+          <span class="ev-time">08.00 – 08.00 (+1)</span>
+          <p class="ev-title">เวร 1st call (วันหยุด)</p>
+          <p class="ev-meta">วันหยุดราชการ · ตามตารางเวร Resident ส่วนปรุง</p>
+          <span class="ev-tag">เวร</span>
+        </div>
+        </div>
+      </div>
+      <div class="day">
+        <div class="stamp">
+          <span class="stamp-wd">จันทร์</span>
+          <span class="stamp-num">2</span>
+          <span class="stamp-mo">พ.ย.</span>
+        </div>
+        <div class="items">
+        <div class="ev ev--procedure">
+          <span class="ev-time">13.30 – 15.30*</span>
+          <p class="ev-title">ECT</p>
+          <p class="ev-meta">หัตถการ ECT</p>
+          <span class="ev-tag">หัตถการ</span>
+        </div>
+        </div>
+      </div>
+      <div class="day">
+        <div class="stamp">
+          <span class="stamp-wd">อังคาร</span>
+          <span class="stamp-num">3</span>
+          <span class="stamp-mo">พ.ย.</span>
+        </div>
+        <div class="items">
+        <div class="ev ev--lecture">
+          <span class="ev-time">13.00 – 15.00</span>
+          <p class="ev-title">Basic sci มช.: Neurogenetics I, Progress in the genetics of specific disorders</p>
+          <p class="ev-meta">ผศ.พญ.ชวิศา สุระดม</p>
+          <span class="ev-tag">บรรยาย</span>
+        </div>
+        <div class="ev ev--duty">
+          <span class="ev-time">16.30 – 08.00 (+1)</span>
+          <p class="ev-title">เวร 1st call (วันธรรมดา)</p>
+          <p class="ev-meta">ตามตารางเวร Resident ส่วนปรุง</p>
+          <span class="ev-tag">เวร</span>
+        </div>
+        </div>
+      </div>
+      <div class="day">
+        <div class="stamp">
+          <span class="stamp-wd">พุธ</span>
+          <span class="stamp-num">4</span>
+          <span class="stamp-mo">พ.ย.</span>
+        </div>
+        <div class="items">
+        <div class="ev ev--conference">
+          <span class="ev-time">ตลอดวัน</span>
+          <p class="ev-title">ประชุมราชวิทยาลัยจิตแพทย์แห่งประเทศไทย (R3/R1)</p>
+          <p class="ev-meta">กรุงเทพมหานคร (กทม.) · ประชุมวิชาการประจำปี · ไม่ระบุเวลา</p>
+          <span class="ev-tag">วิชาการ</span>
+        </div>
+        </div>
+      </div>
+      <div class="day">
+        <div class="stamp">
+          <span class="stamp-wd">พฤหัสบดี</span>
+          <span class="stamp-num">5</span>
+          <span class="stamp-mo">พ.ย.</span>
+        </div>
+        <div class="items">
+        <div class="ev ev--conference">
+          <span class="ev-time">ตลอดวัน</span>
+          <p class="ev-title">ประชุมราชวิทยาลัยจิตแพทย์แห่งประเทศไทย (R3/R1)</p>
+          <p class="ev-meta">กรุงเทพมหานคร (กทม.) · ประชุมวิชาการประจำปี · ไม่ระบุเวลา</p>
+          <span class="ev-tag">วิชาการ</span>
+        </div>
+        </div>
+      </div>
+      <div class="day">
+        <div class="stamp">
+          <span class="stamp-wd">ศุกร์</span>
+          <span class="stamp-num">6</span>
+          <span class="stamp-mo">พ.ย.</span>
+        </div>
+        <div class="items">
+        <div class="ev ev--conference">
+          <span class="ev-time">ตลอดวัน</span>
+          <p class="ev-title">ประชุมราชวิทยาลัยจิตแพทย์แห่งประเทศไทย (R3/R1)</p>
+          <p class="ev-meta">กรุงเทพมหานคร (กทม.) · ประชุมวิชาการประจำปี · ไม่ระบุเวลา</p>
+          <span class="ev-tag">วิชาการ</span>
+        </div>
+        </div>
+      </div>
+      <div class="day is-weekend">
+        <div class="stamp">
+          <span class="stamp-wd">อาทิตย์</span>
+          <span class="stamp-num">8</span>
+          <span class="stamp-mo">พ.ย.</span>
+        </div>
+        <div class="items">
+        <div class="ev ev--duty2">
+          <span class="ev-time">08.00 – 17.00</span>
+          <p class="ev-title">เวร OPD SS รพ.ลานนา</p>
+          <p class="ev-meta">โรงพยาบาลลานนา</p>
+          <span class="ev-tag">เวร (รพ.ลานนา)</span>
+        </div>
+        </div>
+      </div>
+      <div class="day">
+        <div class="stamp">
+          <span class="stamp-wd">จันทร์</span>
+          <span class="stamp-num">9</span>
+          <span class="stamp-mo">พ.ย.</span>
+        </div>
+        <div class="items">
+        <div class="ev ev--conference">
+          <span class="ev-time">13.00 – 14.00</span>
+          <p class="ev-title">Topic: Anxiety disorder</p>
+          <p class="ev-meta">อ.ณัฐวุฒิ อภิวรรณรัตน์ · ผู้นำเสนอ R3 วริยดา</p>
+          <span class="ev-tag">วิชาการ</span>
+        </div>
+        </div>
+      </div>
+      <div class="day">
+        <div class="stamp">
+          <span class="stamp-wd">พุธ</span>
+          <span class="stamp-num">11</span>
+          <span class="stamp-mo">พ.ย.</span>
+        </div>
+        <div class="items">
+        <div class="ev ev--conference">
+          <span class="ev-time">13.00 – 15.00</span>
+          <p class="ev-title">Case Conference</p>
+          <p class="ev-meta">อ.อทิตยาพร แก้ววรรณ · ผู้นำเสนอ R3 ชวิศ</p>
+          <span class="ev-tag">วิชาการ</span>
+        </div>
+        </div>
+      </div>
+      <div class="day">
+        <div class="stamp">
+          <span class="stamp-wd">พฤหัสบดี</span>
+          <span class="stamp-num">12</span>
+          <span class="stamp-mo">พ.ย.</span>
+        </div>
+        <div class="items">
+        <div class="ev ev--event">
+          <span class="ev-time">09.00 – 10.00*</span>
+          <p class="ev-title">Interview case (ร่วมกับ อ.พิชัย)</p>
+          <p class="ev-meta">อ.พิชัย</p>
+          <span class="ev-tag">กิจกรรม</span>
+        </div>
+        <div class="ev ev--lecture">
+          <span class="ev-time">13.00 – 15.00</span>
+          <p class="ev-title">Basic sci มช.: Jean Piaget and cognitive development, Attachment theory, Learning theory</p>
+          <p class="ev-meta">ผศ.นพ.อัศวิน นาคพงศ์พันธุ์</p>
+          <span class="ev-tag">บรรยาย</span>
+        </div>
+        </div>
+      </div>
+            <div class="day">
+        <div class="stamp">
+          <span class="stamp-wd">ศุกร์</span>
+          <span class="stamp-num">13</span>
+          <span class="stamp-mo">พ.ย.</span>
+        </div>
+        <div class="items">
+        <div class="ev ev--lecture">
+          <span class="ev-time">13.00 – 14.00</span>
+          <p class="ev-title">Basic sci มช.: Sigmund Freud, Erik Erikson</p>
+          <p class="ev-meta">ศ.นพ.ทินกร วงศ์ปการันย์</p>
+          <span class="ev-tag">บรรยาย</span>
+        </div>
+        <div class="ev ev--duty">
+          <span class="ev-time">16.30 – 08.00 (+1)</span>
+          <p class="ev-title">เวร 1st call (วันธรรมดา)</p>
+          <p class="ev-meta">ตามตารางเวร Resident ส่วนปรุง</p>
+          <span class="ev-tag">เวร</span>
+        </div>
+        </div>
+      </div>
+      <div class="day is-weekend">
+        <div class="stamp">
+          <span class="stamp-wd">อาทิตย์</span>
+          <span class="stamp-num">15</span>
+          <span class="stamp-mo">พ.ย.</span>
+        </div>
+        <div class="items">
+        <div class="ev ev--duty2">
+          <span class="ev-time">17.00 – 24.00</span>
+          <p class="ev-title">เวร OPD SS รพ.ลานนา</p>
+          <p class="ev-meta">โรงพยาบาลลานนา</p>
+          <span class="ev-tag">เวร (รพ.ลานนา)</span>
+        </div>
+        </div>
+      </div>
+      <div class="day">
+        <div class="stamp">
+          <span class="stamp-wd">จันทร์</span>
+          <span class="stamp-num">16</span>
+          <span class="stamp-mo">พ.ย.</span>
+        </div>
+        <div class="items">
+        <div class="ev ev--conference">
+          <span class="ev-time">13.00 – 14.00</span>
+          <p class="ev-title">Noon Report</p>
+          <p class="ev-meta">อ.วงศ์พัฒน์ วงศ์จิต</p>
+          <span class="ev-tag">วิชาการ</span>
+        </div>
+        <div class="ev ev--conference">
+          <span class="ev-time">14.00 – 15.00</span>
+          <p class="ev-title">Journal Club</p>
+          <p class="ev-meta">อ.วงศ์พัฒน์ วงศ์จิต · ผู้นำเสนอ R3 ญาสุมินทร์</p>
+          <span class="ev-tag">วิชาการ</span>
+        </div>
+        </div>
+      </div>
+      <div class="day">
+        <div class="stamp">
+          <span class="stamp-wd">อังคาร</span>
+          <span class="stamp-num">17</span>
+          <span class="stamp-mo">พ.ย.</span>
+        </div>
+        <div class="items">
+        <div class="ev ev--lecture">
+          <span class="ev-time">13.00 – 15.00</span>
+          <p class="ev-title">Basic sci มช.: Neural development, Concept of neural patterning, neurogenesis, Immune system</p>
+          <p class="ev-meta">ผศ.พญ.ชวิศา สุระดม + อ.พญ.สิริวิภา เจ็กภู่</p>
+          <span class="ev-tag">บรรยาย</span>
+        </div>
+        </div>
+      </div>
+      <div class="day">
+        <div class="stamp">
+          <span class="stamp-wd">พุธ</span>
+          <span class="stamp-num">18</span>
+          <span class="stamp-mo">พ.ย.</span>
+        </div>
+        <div class="items">
+        <div class="ev ev--conference">
+          <span class="ev-time">13.00 – 15.00</span>
+          <p class="ev-title">Case Conference</p>
+          <p class="ev-meta">อ.กมลชนก ฉิมนวน · ผู้นำเสนอ R1 วนพร</p>
+          <span class="ev-tag">วิชาการ</span>
+        </div>
+        <div class="ev ev--duty">
+          <span class="ev-time">16.30 – 08.00 (+1)</span>
+          <p class="ev-title">เวร 1st call (วันธรรมดา)</p>
+          <p class="ev-meta">ตามตารางเวร Resident ส่วนปรุง</p>
+          <span class="ev-tag">เวร</span>
+        </div>
+        </div>
+      </div>
+      <div class="day">
+        <div class="stamp">
+          <span class="stamp-wd">ศุกร์</span>
+          <span class="stamp-num">20</span>
+          <span class="stamp-mo">พ.ย.</span>
+        </div>
+        <div class="items">
+        <div class="ev ev--lecture">
+          <span class="ev-time">13.00 – 15.00</span>
+          <p class="ev-title">Basic sci มช.: Other psychodynamic schools</p>
+          <p class="ev-meta">ศ.นพ.ทินกร วงศ์ปการันย์</p>
+          <span class="ev-tag">บรรยาย</span>
+        </div>
+        </div>
+      </div>
+      <div class="day">
+        <div class="stamp">
+          <span class="stamp-wd">อังคาร</span>
+          <span class="stamp-num">24</span>
+          <span class="stamp-mo">พ.ย.</span>
+        </div>
+        <div class="items">
+        <div class="ev ev--workshop">
+          <span class="ev-time">14.00 – 15.00</span>
+          <p class="ev-title">Psychotherapy Seminar</p>
+          <p class="ev-meta">อ.กฤษณ์ติพงษ์ อรัญสิทธิ์ · ผู้นำเสนอ R2 หทัยรัตน์</p>
+          <span class="ev-tag">สัมมนา</span>
+        </div>
+        <div class="ev ev--duty">
+          <span class="ev-time">16.30 – 08.00 (+1)</span>
+          <p class="ev-title">เวร 1st call (วันธรรมดา)</p>
+          <p class="ev-meta">ตามตารางเวร Resident ส่วนปรุง</p>
+          <span class="ev-tag">เวร</span>
+        </div>
+        </div>
+      </div>
+      <div class="day">
+        <div class="stamp">
+          <span class="stamp-wd">พฤหัสบดี</span>
+          <span class="stamp-num">26</span>
+          <span class="stamp-mo">พ.ย.</span>
+        </div>
+        <div class="items">
+        <div class="ev ev--conference">
+          <span class="ev-time">13.00 – 14.00</span>
+          <p class="ev-title">Noon Report</p>
+          <p class="ev-meta">อ.กฤตณัฏฐ์</p>
+          <span class="ev-tag">วิชาการ</span>
+        </div>
+        <div class="ev ev--conference">
+          <span class="ev-time">14.00 – 15.00</span>
+          <p class="ev-title">Journal Club</p>
+          <p class="ev-meta">อ.กันติชา พิริยะเมธา · ผู้นำเสนอ R1 ปวันรัตน์</p>
+          <span class="ev-tag">วิชาการ</span>
+        </div>
+        </div>
+      </div>
+      <div class="day">
+        <div class="stamp">
+          <span class="stamp-wd">ศุกร์</span>
+          <span class="stamp-num">27</span>
+          <span class="stamp-mo">พ.ย.</span>
+        </div>
+        <div class="items">
+        <div class="ev ev--duty">
+          <span class="ev-time">16.30 – 08.00 (+1)</span>
+          <p class="ev-title">เวร 1st call (วันธรรมดา)</p>
+          <p class="ev-meta">ตามตารางเวร Resident ส่วนปรุง</p>
+          <span class="ev-tag">เวร</span>
+        </div>
+        </div>
+      </div>
+      <div class="day is-weekend">
+        <div class="stamp">
+          <span class="stamp-wd">อาทิตย์</span>
+          <span class="stamp-num">29</span>
+          <span class="stamp-mo">พ.ย.</span>
+        </div>
+        <div class="items">
+        <div class="ev ev--duty">
+          <span class="ev-time">08.00 – 08.00 (+1)</span>
+          <p class="ev-title">เวร 1st call (วันหยุด)</p>
+          <p class="ev-meta">วันหยุดราชการ · ตามตารางเวร Resident ส่วนปรุง</p>
+          <span class="ev-tag">เวร</span>
+        </div>
+        </div>
+      </div>
+      <div class="day">
+        <div class="stamp">
+          <span class="stamp-wd">จันทร์</span>
+          <span class="stamp-num">30</span>
+          <span class="stamp-mo">พ.ย.</span>
+        </div>
+        <div class="items">
+        <div class="ev ev--therapy">
+          <span class="ev-time">13.00 – 14.00</span>
+          <p class="ev-title">Group Therapy</p>
+          <p class="ev-meta">อ.ปริทรรศ ศิลปกิจ · ผู้นำเสนอ R3 ญาสุมินทร์</p>
+          <span class="ev-tag">บำบัด</span>
+        </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<footer>
+  ปฏิทินนี้สร้างขึ้นเพื่อใช้งานส่วนตัว อ้างอิงจากตารางฝึกอบรมแพทย์ประจำบ้านและตารางเวร Resident ส่วนปรุง เดือนพฤศจิกายน 2569<br>
+  * เวลาโดยประมาณ (ไม่ได้ระบุระยะเวลาสิ้นสุดในตารางต้นฉบับ) — โปรดตรวจสอบกับผู้เกี่ยวข้องอีกครั้ง
+</footer>
+
+<script>
+(function(){
+  var today = new Date();
+  if (today.getFullYear() === 2026 && today.getMonth() === 10) {
+    var num = today.getDate();
+    document.querySelectorAll('.day').forEach(function(d){
+      var n = d.querySelector('.stamp-num');
+      if (n && parseInt(n.textContent,10) === num) d.classList.add('is-today');
+    });
+  }
+})();
+(function(){
+  if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
+    document.querySelectorAll('.export-btn, .export-sub-links a').forEach(function(a){ a.removeAttribute('download'); });
+  }
+})();
+</script>
+</html>
