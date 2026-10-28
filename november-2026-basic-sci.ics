@@ -1,0 +1,68 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Codex//November 2026 Activities//TH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:พณิช: Basic sci พ.ย. 2569
+X-WR-TIMEZONE:Asia/Bangkok
+BEGIN:VTIMEZONE
+TZID:Asia/Bangkok
+X-LIC-LOCATION:Asia/Bangkok
+BEGIN:STANDARD
+TZOFFSETFROM:+0700
+TZOFFSETTO:+0700
+TZNAME:+07
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:nov-03-basic-sci-neurogenetics-i-prog-2026@codex
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=Asia/Bangkok:20261103T130000
+DTEND;TZID=Asia/Bangkok:20261103T150000
+SUMMARY:Basic sci มช.: Neurogenetics I, Progress in the genetics of specific disorders
+DESCRIPTION:ผศ.พญ.ชวิศา สุระดม
+CATEGORIES:Basic sci
+COLOR:dodgerblue
+END:VEVENT
+BEGIN:VEVENT
+UID:nov-12-basic-sci-jean-piaget-and-cogn-2026@codex
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=Asia/Bangkok:20261112T130000
+DTEND;TZID=Asia/Bangkok:20261112T150000
+SUMMARY:Basic sci มช.: Jean Piaget and cognitive development, Attachment theory, Learning theory
+DESCRIPTION:ผศ.นพ.อัศวิน นาคพงศ์พันธุ์
+CATEGORIES:Basic sci
+COLOR:dodgerblue
+END:VEVENT
+BEGIN:VEVENT
+UID:nov-13-basic-sci-sigmund-freud-erik-e-2026@codex
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=Asia/Bangkok:20261113T130000
+DTEND;TZID=Asia/Bangkok:20261113T140000
+SUMMARY:Basic sci มช.: Sigmund Freud, Erik Erikson
+DESCRIPTION:ศ.นพ.ทินกร วงศ์ปการันย์
+CATEGORIES:Basic sci
+COLOR:dodgerblue
+END:VEVENT
+BEGIN:VEVENT
+UID:nov-17-basic-sci-neural-development-c-2026@codex
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=Asia/Bangkok:20261117T130000
+DTEND;TZID=Asia/Bangkok:20261117T150000
+SUMMARY:Basic sci มช.: Neural development, Concept of neural patterning, neurogenesis, Immune system
+DESCRIPTION:ผศ.พญ.ชวิศา สุระดม + อ.พญ.สิริวิภา เจ็กภู่
+CATEGORIES:Basic sci
+COLOR:dodgerblue
+END:VEVENT
+BEGIN:VEVENT
+UID:nov-20-basic-sci-other-psychodynamic--2026@codex
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=Asia/Bangkok:20261120T130000
+DTEND;TZID=Asia/Bangkok:20261120T150000
+SUMMARY:Basic sci มช.: Other psychodynamic schools
+DESCRIPTION:ศ.นพ.ทินกร วงศ์ปการันย์
+CATEGORIES:Basic sci
+COLOR:dodgerblue
+END:VEVENT
+END:VCALENDAR
