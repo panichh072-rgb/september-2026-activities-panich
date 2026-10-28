@@ -1,0 +1,151 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Codex//November 2026 Activities//TH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:พณิช: ตารางเรียนอื่นๆ พ.ย. 2569
+X-WR-TIMEZONE:Asia/Bangkok
+BEGIN:VTIMEZONE
+TZID:Asia/Bangkok
+X-LIC-LOCATION:Asia/Bangkok
+BEGIN:STANDARD
+TZOFFSETFROM:+0700
+TZOFFSETTO:+0700
+TZNAME:+07
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:nov-04-r3-r1-2026@codex
+DTSTAMP:20261028T090000Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:ประชุมราชวิทยาลัยจิตแพทย์แห่งประเทศไทย (R3/R1)
+LOCATION:กรุงเทพมหานคร
+DESCRIPTION:กรุงเทพมหานคร (กทม.) · ประชุมวิชาการประจำปี · ไม่ระบุเวลา
+CATEGORIES:ตารางเรียน (ไม่ใช่ Basic sci)
+COLOR:darkviolet
+END:VEVENT
+BEGIN:VEVENT
+UID:nov-05-r3-r1-2026@codex
+DTSTAMP:20261028T090000Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:ประชุมราชวิทยาลัยจิตแพทย์แห่งประเทศไทย (R3/R1)
+LOCATION:กรุงเทพมหานคร
+DESCRIPTION:กรุงเทพมหานคร (กทม.) · ประชุมวิชาการประจำปี · ไม่ระบุเวลา
+CATEGORIES:ตารางเรียน (ไม่ใช่ Basic sci)
+COLOR:darkviolet
+END:VEVENT
+BEGIN:VEVENT
+UID:nov-06-r3-r1-2026@codex
+DTSTAMP:20261028T090000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:ประชุมราชวิทยาลัยจิตแพทย์แห่งประเทศไทย (R3/R1)
+LOCATION:กรุงเทพมหานคร
+DESCRIPTION:กรุงเทพมหานคร (กทม.) · ประชุมวิชาการประจำปี · ไม่ระบุเวลา
+CATEGORIES:ตารางเรียน (ไม่ใช่ Basic sci)
+COLOR:darkviolet
+END:VEVENT
+BEGIN:VEVENT
+UID:nov-09-topic-anxiety-disorder-2026@codex
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=Asia/Bangkok:20261109T130000
+DTEND;TZID=Asia/Bangkok:20261109T140000
+SUMMARY:Topic: Anxiety disorder
+DESCRIPTION:อ.ณัฐวุฒิ อภิวรรณรัตน์ · ผู้นำเสนอ R3 วริยดา
+CATEGORIES:ตารางเรียน (ไม่ใช่ Basic sci)
+COLOR:darkviolet
+END:VEVENT
+BEGIN:VEVENT
+UID:nov-11-case-conference-2026@codex
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=Asia/Bangkok:20261111T130000
+DTEND;TZID=Asia/Bangkok:20261111T150000
+SUMMARY:Case Conference
+DESCRIPTION:อ.อทิตยาพร แก้ววรรณ · ผู้นำเสนอ R3 ชวิศ
+CATEGORIES:ตารางเรียน (ไม่ใช่ Basic sci)
+COLOR:darkviolet
+END:VEVENT
+BEGIN:VEVENT
+UID:nov-12-interview-case-2026@codex
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=Asia/Bangkok:20261112T090000
+DTEND;TZID=Asia/Bangkok:20261112T100000
+SUMMARY:Interview case (ร่วมกับ อ.พิชัย)
+DESCRIPTION:อ.พิชัย \nหมายเหตุ: เวลาสิ้นสุดเป็นค่าประมาณ ไม่ได้ระบุในตารางต้นฉบับ
+CATEGORIES:ตารางเรียน (ไม่ใช่ Basic sci)
+COLOR:darkviolet
+END:VEVENT
+BEGIN:VEVENT
+UID:nov-16-noon-report-2026@codex
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=Asia/Bangkok:20261116T130000
+DTEND;TZID=Asia/Bangkok:20261116T140000
+SUMMARY:Noon Report
+DESCRIPTION:อ.วงศ์พัฒน์ วงศ์จิต
+CATEGORIES:ตารางเรียน (ไม่ใช่ Basic sci)
+COLOR:darkviolet
+END:VEVENT
+BEGIN:VEVENT
+UID:nov-16-journal-club-2026@codex
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=Asia/Bangkok:20261116T140000
+DTEND;TZID=Asia/Bangkok:20261116T150000
+SUMMARY:Journal Club
+DESCRIPTION:อ.วงศ์พัฒน์ วงศ์จิต · ผู้นำเสนอ R3 ญาสุมินทร์
+CATEGORIES:ตารางเรียน (ไม่ใช่ Basic sci)
+COLOR:darkviolet
+END:VEVENT
+BEGIN:VEVENT
+UID:nov-18-case-conference-2026@codex
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=Asia/Bangkok:20261118T130000
+DTEND;TZID=Asia/Bangkok:20261118T150000
+SUMMARY:Case Conference
+DESCRIPTION:อ.กมลชนก ฉิมนวน · ผู้นำเสนอ R1 วนพร
+CATEGORIES:ตารางเรียน (ไม่ใช่ Basic sci)
+COLOR:darkviolet
+END:VEVENT
+BEGIN:VEVENT
+UID:nov-24-psychotherapy-seminar-2026@codex
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=Asia/Bangkok:20261124T140000
+DTEND;TZID=Asia/Bangkok:20261124T150000
+SUMMARY:Psychotherapy Seminar
+DESCRIPTION:อ.กฤษณ์ติพงษ์ อรัญสิทธิ์ · ผู้นำเสนอ R2 หทัยรัตน์
+CATEGORIES:ตารางเรียน (ไม่ใช่ Basic sci)
+COLOR:darkviolet
+END:VEVENT
+BEGIN:VEVENT
+UID:nov-26-noon-report-2026@codex
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=Asia/Bangkok:20261126T130000
+DTEND;TZID=Asia/Bangkok:20261126T140000
+SUMMARY:Noon Report
+DESCRIPTION:อ.กฤตณัฏฐ์
+CATEGORIES:ตารางเรียน (ไม่ใช่ Basic sci)
+COLOR:darkviolet
+END:VEVENT
+BEGIN:VEVENT
+UID:nov-26-journal-club-2026@codex
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=Asia/Bangkok:20261126T140000
+DTEND;TZID=Asia/Bangkok:20261126T150000
+SUMMARY:Journal Club
+DESCRIPTION:อ.กันติชา พิริยะเมธา · ผู้นำเสนอ R1 ปวันรัตน์
+CATEGORIES:ตารางเรียน (ไม่ใช่ Basic sci)
+COLOR:darkviolet
+END:VEVENT
+BEGIN:VEVENT
+UID:nov-30-group-therapy-2026@codex
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=Asia/Bangkok:20261130T130000
+DTEND;TZID=Asia/Bangkok:20261130T140000
+SUMMARY:Group Therapy
+DESCRIPTION:อ.ปริทรรศ ศิลปกิจ · ผู้นำเสนอ R3 ญาสุมินทร์
+CATEGORIES:ตารางเรียน (ไม่ใช่ Basic sci)
+COLOR:darkviolet
+END:VEVENT
+END:VCALENDAR
