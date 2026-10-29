@@ -122,6 +122,12 @@ details.legend[open] summary::after{content:"–"}
 .legend-item{display:flex; align-items:center; gap:8px}
 .legend-item b{margin-left:auto; font-family:"IBM Plex Mono",monospace; color:var(--ink-3); font-weight:600; font-size:.78rem}
 
+.howto{padding:2px 16px 16px; font-size:.85rem; color:var(--ink-2); line-height:1.6}
+.howto-note{margin:0 0 10px}
+.howto-steps{margin:0 0 10px; padding-left:1.3em; display:flex; flex-direction:column; gap:8px}
+.howto-steps li{padding-left:2px}
+.howto-steps b{color:var(--ink)}
+
 main{padding:26px 0 8px}
 .timeline{margin-top:4px}
 .day{
@@ -228,6 +234,21 @@ footer{padding:28px 18px 40px; text-align:center; color:var(--ink-3); font-size:
       </div>
     </div>
   </div>
+
+  <details class="legend">
+    <summary>วิธีให้สีแยกกันจริงบน iPhone (ทำครั้งเดียว)</summary>
+    <div class="howto">
+      <p class="howto-note">แอป Calendar ของ iPhone จะให้สีตาม "ปฏิทิน" ที่ event อยู่ ไม่ใช่ตาม event แต่ละอัน ดังนั้นถ้าเพิ่มไฟล์รวมไฟล์เดียว ทุก event จะไปอยู่ปฏิทินเดียวกันและขึ้นสีเดียวหมด วิธีแก้คือสร้างปฏิทินแยก 5 อันก่อน แล้วค่อยนำเข้าไฟล์ทีละหมวดไปยังปฏิทินที่ตรงกัน:</p>
+      <ol class="howto-steps">
+        <li>เปิดแอป <b>Calendar</b> → แตะ <b>ปฏิทิน (Calendars)</b> ที่แถบล่าง → แตะ <b>แก้ไข (Edit)</b> มุมบนซ้าย</li>
+        <li>แตะ <b>เพิ่มปฏิทิน (Add Calendar)</b> → ตั้งชื่อ (เช่น "Basic sci") → เลือกสีให้ตรงกับจุดสีด้านบน → แตะ <b>เพิ่ม (Add/Done)</b></li>
+        <li>ทำซ้ำข้อ 2 จนครบ 5 ปฏิทิน: Basic sci (น้ำเงิน), เวรสวนปรุง (แดง), เวร รพ.ลานนา (ส้ม), ECT (เขียวอมฟ้า), ตารางเรียนอื่นๆ (ม่วง)</li>
+        <li>กลับมาหน้านี้ แตะลิงก์สีด้านบนทีละอัน (เช่น "Basic sci") → เมื่อหน้าจอ "เพิ่มลงปฏิทิน" ขึ้นมา แตะช่อง <b>ปฏิทิน (Calendar)</b> แล้วเลือกปฏิทินชื่อเดียวกันที่สร้างไว้ → แตะ <b>เพิ่มทั้งหมด (Add All)</b></li>
+        <li>ทำซ้ำข้อ 4 ให้ครบทั้ง 5 ลิงก์ — เสร็จแล้ว event แต่ละหมวดจะขึ้นคนละสีตามปฏิทินที่เลือกไว้</li>
+      </ol>
+      <p class="howto-note">หมายเหตุ: ปุ่มสีเขียวหลัก "เพิ่มลงปฏิทิน" ที่รวมทุกหมวดไว้ไฟล์เดียว ใช้ได้เหมือนเดิมแต่จะขึ้นสีเดียวทั้งหมดถ้านำเข้าปฏิทินเดียว</p>
+    </div>
+  </details>
 
   <details class="legend">
     <summary>คำอธิบายสัญลักษณ์</summary>
