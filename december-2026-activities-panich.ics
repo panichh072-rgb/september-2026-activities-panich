@@ -1,0 +1,237 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//panich-calendar//december-2026//TH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:ปฏิทินกิจกรรมพณิช ธ.ค. 2569
+X-WR-TIMEZONE:Asia/Bangkok
+BEGIN:VTIMEZONE
+TZID:Asia/Bangkok
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0700
+TZOFFSETTO:+0700
+TZNAME:+07
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:dec-01-psychotherapy-seminar-2-1-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261201T140000
+DTEND;TZID=Asia/Bangkok:20261201T170000
+SUMMARY:Psychotherapy Seminar (ครั้งที่ 2)
+DESCRIPTION:อ.กฤษณ์ติพงษ์ อรัญสิทธิ์ · ผู้นำเสนอ R2 หทัยรัตน์ · ห้องประชุม นพ.เกียรติภูมิ วงศ์รจิต (OPD)
+CATEGORIES:ตารางเรียน (ไม่ใช่ Basic sci)
+COLOR:darkviolet
+END:VEVENT
+BEGIN:VEVENT
+UID:dec-02-psychotherapy-seminar-2-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261202T133000
+DTEND;TZID=Asia/Bangkok:20261202T163000
+SUMMARY:Psychotherapy Seminar
+DESCRIPTION:อ.ณัฐวุฒิ อภิวรรณรัตน์ · ผู้นำเสนอ R2 สุทธิพัฒน์ · ห้องประชุม นพ.เกียรติภูมิ วงศ์รจิต (OPD)
+CATEGORIES:ตารางเรียน (ไม่ใช่ Basic sci)
+COLOR:darkviolet
+END:VEVENT
+BEGIN:VEVENT
+UID:dec-02-1st-call-3-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261202T163000
+DTEND;TZID=Asia/Bangkok:20261203T080000
+SUMMARY:เวร 1st call (วันธรรมดา)
+DESCRIPTION:ตามตารางเวร Resident ส่วนปรุง · 2nd call: วริยดา
+CATEGORIES:เวรสวนปรุง
+COLOR:crimson
+END:VEVENT
+BEGIN:VEVENT
+UID:dec-03-opd-ss-4-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261203T170000
+DTEND;TZID=Asia/Bangkok:20261204T000000
+SUMMARY:เวร OPD SS รพ.ลานนา
+DESCRIPTION:โรงพยาบาลลานนา
+CATEGORIES:เวร รพ.ลานนา
+COLOR:darkorange
+END:VEVENT
+BEGIN:VEVENT
+UID:dec-06-1st-call-5-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261206T080000
+DTEND;TZID=Asia/Bangkok:20261207T080000
+SUMMARY:เวร 1st call (วันหยุด)
+DESCRIPTION:วันหยุดราชการ · ตามตารางเวร Resident ส่วนปรุง · 2nd call: ดวงกมล
+CATEGORIES:เวรสวนปรุง
+COLOR:crimson
+END:VEVENT
+BEGIN:VEVENT
+UID:dec-08-topic-mood-disorder-6-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261208T133000
+DTEND;TZID=Asia/Bangkok:20261208T153000
+SUMMARY:Topic: Mood Disorder
+DESCRIPTION:อ.พิชาภัค · ผู้นำเสนอ R3 ชวิศ · ห้องประชุม นพ.เกียรติภูมิ วงศ์รจิต (OPD)
+CATEGORIES:ตารางเรียน (ไม่ใช่ Basic sci)
+COLOR:darkviolet
+END:VEVENT
+BEGIN:VEVENT
+UID:dec-08-1st-call-7-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261208T163000
+DTEND;TZID=Asia/Bangkok:20261209T080000
+SUMMARY:เวร 1st call (วันธรรมดา)
+DESCRIPTION:ตามตารางเวร Resident ส่วนปรุง · 2nd call: หทัยรัตน์
+CATEGORIES:เวรสวนปรุง
+COLOR:crimson
+END:VEVENT
+BEGIN:VEVENT
+UID:dec-11-core-lecture-sleep-8-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261211T090000
+DTEND;TZID=Asia/Bangkok:20261211T103000
+SUMMARY:Core Lecture: Sleep
+DESCRIPTION:อ.นพ.จาตุรงค์ ศิริเทียรทอง
+CATEGORIES:Basic sci
+COLOR:dodgerblue
+END:VEVENT
+BEGIN:VEVENT
+UID:dec-11-1st-call-9-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261211T163000
+DTEND;TZID=Asia/Bangkok:20261212T080000
+SUMMARY:เวร 1st call (วันธรรมดา)
+DESCRIPTION:ตามตารางเวร Resident ส่วนปรุง · 2nd call: วริยดา
+CATEGORIES:เวรสวนปรุง
+COLOR:crimson
+END:VEVENT
+BEGIN:VEVENT
+UID:dec-13-1st-call-10-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261213T080000
+DTEND;TZID=Asia/Bangkok:20261214T080000
+SUMMARY:เวร 1st call (วันหยุด)
+DESCRIPTION:วันหยุดราชการ · ตามตารางเวร Resident ส่วนปรุง · 2nd call: วริยดา
+CATEGORIES:เวรสวนปรุง
+COLOR:crimson
+END:VEVENT
+BEGIN:VEVENT
+UID:dec-14-cda-11-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261214T120000
+DTEND;TZID=Asia/Bangkok:20261214T133000
+SUMMARY:CDA
+DESCRIPTION:ห้องประชุมคุณพุ่ม ชั้น 1 อาคารอุบลรัตนราชกัญญา
+CATEGORIES:ตารางเรียน (ไม่ใช่ Basic sci)
+COLOR:darkviolet
+END:VEVENT
+BEGIN:VEVENT
+UID:dec-14-epa-12-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261214T130000
+DTEND;TZID=Asia/Bangkok:20261214T150000
+SUMMARY:ประกาศผล EPA
+DESCRIPTION:ห้องประชุมองค์กรแพทย์
+CATEGORIES:ตารางเรียน (ไม่ใช่ Basic sci)
+COLOR:darkviolet
+END:VEVENT
+BEGIN:VEVENT
+UID:dec-16-1st-call-13-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261216T163000
+DTEND;TZID=Asia/Bangkok:20261217T080000
+SUMMARY:เวร 1st call (วันธรรมดา)
+DESCRIPTION:ตามตารางเวร Resident ส่วนปรุง · 2nd call: วริยดา
+CATEGORIES:เวรสวนปรุง
+COLOR:crimson
+END:VEVENT
+BEGIN:VEVENT
+UID:dec-17-research-seminar-14-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261217T133000
+DTEND;TZID=Asia/Bangkok:20261217T163000
+SUMMARY:Research Seminar
+DESCRIPTION:อ.จักริน + อ.การันต์ + อ.พิชาภัค + อ.ปองปรีดา + อ.พงศ์รวี · ห้องประชุม นพ.เกียรติภูมิ วงศ์รจิต (OPD)
+CATEGORIES:ตารางเรียน (ไม่ใช่ Basic sci)
+COLOR:darkviolet
+END:VEVENT
+BEGIN:VEVENT
+UID:dec-17-opd-ss-15-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261217T170000
+DTEND;TZID=Asia/Bangkok:20261218T000000
+SUMMARY:เวร OPD SS รพ.ลานนา
+DESCRIPTION:โรงพยาบาลลานนา
+CATEGORIES:เวร รพ.ลานนา
+COLOR:darkorange
+END:VEVENT
+BEGIN:VEVENT
+UID:dec-21-1st-call-16-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261221T163000
+DTEND;TZID=Asia/Bangkok:20261222T080000
+SUMMARY:เวร 1st call (วันธรรมดา)
+DESCRIPTION:ตามตารางเวร Resident ส่วนปรุง · 2nd call: ณปภัช
+CATEGORIES:เวรสวนปรุง
+COLOR:crimson
+END:VEVENT
+BEGIN:VEVENT
+UID:dec-22-opd-ss-17-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261222T170000
+DTEND;TZID=Asia/Bangkok:20261223T000000
+SUMMARY:เวร OPD SS รพ.ลานนา
+DESCRIPTION:โรงพยาบาลลานนา
+CATEGORIES:เวร รพ.ลานนา
+COLOR:darkorange
+END:VEVENT
+BEGIN:VEVENT
+UID:dec-23-noon-report-18-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261223T133000
+DTEND;TZID=Asia/Bangkok:20261223T143000
+SUMMARY:Noon Report
+DESCRIPTION:อ.กมลชนก · ห้องประชุม นพ.เกียรติภูมิ วงศ์รจิต (OPD)
+CATEGORIES:ตารางเรียน (ไม่ใช่ Basic sci)
+COLOR:darkviolet
+END:VEVENT
+BEGIN:VEVENT
+UID:dec-23-journal-club-19-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261223T143000
+DTEND;TZID=Asia/Bangkok:20261223T163000
+SUMMARY:Journal Club
+DESCRIPTION:อ.กมลชนก · ผู้นำเสนอ R1 สุรพัศ (มช.) · ห้องประชุม นพ.เกียรติภูมิ วงศ์รจิต (OPD)
+CATEGORIES:ตารางเรียน (ไม่ใช่ Basic sci)
+COLOR:darkviolet
+END:VEVENT
+BEGIN:VEVENT
+UID:dec-28-group-therapy-20-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261228T133000
+DTEND;TZID=Asia/Bangkok:20261228T143000
+SUMMARY:Group Therapy
+DESCRIPTION:ผู้นำเสนอ R1 พณิช · ตึกกรุณา ชั้น 3
+CATEGORIES:ตารางเรียน (ไม่ใช่ Basic sci)
+COLOR:darkviolet
+END:VEVENT
+BEGIN:VEVENT
+UID:dec-28-1st-call-21-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261228T163000
+DTEND;TZID=Asia/Bangkok:20261229T080000
+SUMMARY:เวร 1st call (วันธรรมดา)
+DESCRIPTION:ตามตารางเวร Resident ส่วนปรุง · 2nd call: ดวงกมล
+CATEGORIES:เวรสวนปรุง
+COLOR:crimson
+END:VEVENT
+BEGIN:VEVENT
+UID:dec-29-opd-ss-22-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261229T170000
+DTEND;TZID=Asia/Bangkok:20261230T000000
+SUMMARY:เวร OPD SS รพ.ลานนา
+DESCRIPTION:โรงพยาบาลลานนา
+CATEGORIES:เวร รพ.ลานนา
+COLOR:darkorange
+END:VEVENT
+END:VCALENDAR
