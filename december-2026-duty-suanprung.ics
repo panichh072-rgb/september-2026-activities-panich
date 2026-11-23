@@ -1,0 +1,97 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//panich-calendar//december-2026//TH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:เวรสวนปรุง - พณิช ธ.ค. 2569
+X-WR-TIMEZONE:Asia/Bangkok
+BEGIN:VTIMEZONE
+TZID:Asia/Bangkok
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0700
+TZOFFSETTO:+0700
+TZNAME:+07
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:dec-02-1st-call-3-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261202T163000
+DTEND;TZID=Asia/Bangkok:20261203T080000
+SUMMARY:เวร 1st call (วันธรรมดา)
+DESCRIPTION:ตามตารางเวร Resident ส่วนปรุง · 2nd call: วริยดา
+CATEGORIES:เวรสวนปรุง
+COLOR:crimson
+END:VEVENT
+BEGIN:VEVENT
+UID:dec-06-1st-call-5-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261206T080000
+DTEND;TZID=Asia/Bangkok:20261207T080000
+SUMMARY:เวร 1st call (วันหยุด)
+DESCRIPTION:วันหยุดราชการ · ตามตารางเวร Resident ส่วนปรุง · 2nd call: ดวงกมล
+CATEGORIES:เวรสวนปรุง
+COLOR:crimson
+END:VEVENT
+BEGIN:VEVENT
+UID:dec-08-1st-call-7-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261208T163000
+DTEND;TZID=Asia/Bangkok:20261209T080000
+SUMMARY:เวร 1st call (วันธรรมดา)
+DESCRIPTION:ตามตารางเวร Resident ส่วนปรุง · 2nd call: หทัยรัตน์
+CATEGORIES:เวรสวนปรุง
+COLOR:crimson
+END:VEVENT
+BEGIN:VEVENT
+UID:dec-11-1st-call-9-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261211T163000
+DTEND;TZID=Asia/Bangkok:20261212T080000
+SUMMARY:เวร 1st call (วันธรรมดา)
+DESCRIPTION:ตามตารางเวร Resident ส่วนปรุง · 2nd call: วริยดา
+CATEGORIES:เวรสวนปรุง
+COLOR:crimson
+END:VEVENT
+BEGIN:VEVENT
+UID:dec-13-1st-call-10-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261213T080000
+DTEND;TZID=Asia/Bangkok:20261214T080000
+SUMMARY:เวร 1st call (วันหยุด)
+DESCRIPTION:วันหยุดราชการ · ตามตารางเวร Resident ส่วนปรุง · 2nd call: วริยดา
+CATEGORIES:เวรสวนปรุง
+COLOR:crimson
+END:VEVENT
+BEGIN:VEVENT
+UID:dec-16-1st-call-13-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261216T163000
+DTEND;TZID=Asia/Bangkok:20261217T080000
+SUMMARY:เวร 1st call (วันธรรมดา)
+DESCRIPTION:ตามตารางเวร Resident ส่วนปรุง · 2nd call: วริยดา
+CATEGORIES:เวรสวนปรุง
+COLOR:crimson
+END:VEVENT
+BEGIN:VEVENT
+UID:dec-21-1st-call-16-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261221T163000
+DTEND;TZID=Asia/Bangkok:20261222T080000
+SUMMARY:เวร 1st call (วันธรรมดา)
+DESCRIPTION:ตามตารางเวร Resident ส่วนปรุง · 2nd call: ณปภัช
+CATEGORIES:เวรสวนปรุง
+COLOR:crimson
+END:VEVENT
+BEGIN:VEVENT
+UID:dec-28-1st-call-21-2026@codex
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Bangkok:20261228T163000
+DTEND;TZID=Asia/Bangkok:20261229T080000
+SUMMARY:เวร 1st call (วันธรรมดา)
+DESCRIPTION:ตามตารางเวร Resident ส่วนปรุง · 2nd call: ดวงกมล
+CATEGORIES:เวรสวนปรุง
+COLOR:crimson
+END:VEVENT
+END:VCALENDAR
